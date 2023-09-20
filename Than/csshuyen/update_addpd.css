@@ -1,0 +1,30 @@
+.check_error{
+    font-size: 15px;
+    color: red;
+}
+.sao{
+    color: red;
+    
+}
+
+.editcolor{
+    color:#616060EF;
+    font-size:14px;
+}
+.submit{
+    text-align: center;
+}
+.bdtb{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 16px;
+    display: inline-block;
+    height: 40px;
+    color: #666666;
+}
+.headtb{
+    color: #080808;
+    font-size: 30px;
+}

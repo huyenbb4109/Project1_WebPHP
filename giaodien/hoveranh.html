@@ -1,0 +1,291 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+/* .container {
+  position: relative;
+  width: 70%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .6s ease;
+  backface-visibility: hidden;
+}
+
+.readmore {
+  transition: .6s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .readmore {
+  opacity: 1;
+}
+
+.text {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 16px 32px;
+  font-weight: bold;
+} */
+/* img {
+ -webkit-transition:all 0.5s ease-out;
+ -moz-transition:all 0.5s ease-out;
+ -ms-transition:all 0.5s ease-out;
+ -o-transition:all 0.5s ease-out;
+ transition:all 0.5s ease-out;
+ }
+ img:hover {
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+ transform:rotate(360deg);
+ }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://quachquynh.com/wp-content/uploads/2020/04/hieu-ung-hover-anh.jpg" class="image" style="width:100%">
+  <div class="readmore">
+    <div class="text">Read more</div>
+  </div>
+</div>
+  
+</body>
+</html> */
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#" > <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Caption Hover Animations</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900">
+	<style type="text/css">
+	/* body{ */
+		/*height: 10000px;*/
+		/* font-family: "Lato";
+		background-color: #2980b9;
+		padding:20px 30px;
+		margin: 0px;
+	} */
+
+	/* h1,h2,h3,h4{
+		padding: 0px;
+		margin: 0px;
+	} */
+    
+
+	.caption-style-3{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+
+	.caption-style-3 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.caption-style-3 li:hover .caption{
+		opacity: 1;
+		transform: translateY(-100px);
+		-webkit-transform:translateY(-100px);
+		-moz-transform:translateY(-100px);
+		-ms-transform:translateY(-100px);
+		-o-transform:translateY(-100px);
+	}
+
+	.caption-style-3 li:hover img{
+		opacity: 1;
+		transform: translateY(-40px);
+		-webkit-transform:translateY(-40px);
+		-moz-transform:translateY(-40px);
+		-ms-transform:translateY(-40px);
+		-o-transform:translateY(-40px);
+
+	}
+
+
+	.caption-style-3 img{
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+
+
+	.caption-style-3 .caption{
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		top:300px;
+		-webkit-transition:all 0.15s ease-in-out;
+		-moz-transition:all 0.15s ease-in-out;
+		-o-transition:all 0.15s ease-in-out;
+		-ms-transition:all 0.15s ease-in-out;
+		transition:all 0.15s ease-in-out;
+
+	}
+
+	.caption-style-3 img{
+		-webkit-transition:all 0.15s ease-in-out;
+		-moz-transition:all 0.15s ease-in-out;
+		-o-transition:all 0.15s ease-in-out;
+		-ms-transition:all 0.15s ease-in-out;
+		transition:all 0.15s ease-in-out;
+
+	}
+	.caption-style-3 .blur{
+		background-color: rgba(142, 68, 173,0.95);
+		height: 300px;
+		width: 400px;
+		z-index: 5;
+		position: absolute;
+	}
+
+	.caption-style-3 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	.caption-style-3 .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 400px;
+		height: 300px;
+		text-align: left;
+		top:20px;
+	}
+
+
+	/** Nav Menu */
+	/* ul.nav-menu{
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+		width: 510px;
+		margin: 60px auto;
+	}
+
+	ul.nav-menu li{
+		display: inline;
+		margin-right: 10px;
+		padding:10px;
+		border: 1px solid #ddd;
+	}
+
+	ul.nav-menu li a{
+		color: #eee;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	ul.nav-menu li a:hover, ul.nav-menu li a.active{
+		color: #2c3e50;
+	}  */
+	
+
+	/** fork icon**/
+	.fork{
+		position: absolute;
+		top:0px;
+		left: 0px;
+	}
+
+	</style>
+</head>
+<body>
+	
+
+	<div class="container-a3">
+		<ul class="caption-style-3">
+			<li>
+				<img src="images/anhprojech/nhan4.png" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="images/anhprojech/bongtai4.png" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="images/anhprojech/bongtai3.png" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="images/anhprojech/bongtai1.png" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="images/anhprojech/nhan5.png" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="images/anhprojech/bongtai2.png" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

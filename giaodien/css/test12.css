@@ -1,0 +1,55 @@
+
+  
+  body {
+    /* background: #082330; */
+    background-size: 100px 30%;
+    font: 5em/1 Arial;
+  }
+  
+  .text--line {
+    font-size: 0.5em;
+  }
+  
+  
+  .text-copy {
+    fill: none;
+    stroke:black;
+    stroke-dasharray: 7% 28%;
+    stroke-width: 3px;
+    -webkit-animation: stroke-offset 3s infinite linear;
+            animation: stroke-offset 3s infinite linear;
+  }
+  /* .text-copy:nth-child(1) {
+    stroke: #360745;
+    stroke-dashoffset: 7%;
+  }
+  .text-copy:nth-child(2) {
+    stroke: #D61C59;
+    stroke-dashoffset: 14%;
+  } */
+  .text-copy:nth-child(3) {
+    stroke: red;
+    stroke-dashoffset: 50%;
+  }
+  .text-copy:nth-child(4) {
+    stroke: black;
+    stroke-dashoffset: 50%;
+  }
+  /* .text-copy:nth-child(5) {
+    stroke: #1B8798;
+    stroke-dashoffset: 35%;
+  } */
+  
+  @-webkit-keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 87.5%;
+    }
+  }
+  
+  @keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 87.5%;
+    }
+  }
